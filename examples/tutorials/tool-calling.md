@@ -27,7 +27,7 @@ Claude: [Uses write tool to create Tasks/Fix API bug.md]
 
 ## MCP (Model Context Protocol)
 
-MCP lets you give Claude custom tools. PersonalOS includes an optional MCP server that adds specialized task management tools.
+MCP lets you give Claude custom tools. HowardOS includes an optional MCP server that adds specialized task management tools.
 
 ### Why Use MCP?
 
@@ -42,7 +42,7 @@ MCP lets you give Claude custom tools. PersonalOS includes an optional MCP serve
 - Structured data responses
 - Better for power users and automation
 
-### PersonalOS MCP Tools
+### HowardOS MCP Tools
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -87,7 +87,7 @@ Add to your Claude Code MCP config:
       "command": "python",
       "args": ["core/mcp/server.py"],
       "env": {
-        "MANAGER_AI_BASE_DIR": "/path/to/your/personal-os"
+        "MANAGER_AI_BASE_DIR": "/path/to/your/howard-os"
       }
     }
   }

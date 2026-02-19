@@ -14,8 +14,10 @@ These workflows are automatically invoked by your agent when a matching task is 
 
 | Workflow | Time | When to Use |
 |----------|------|-------------|
-| [Morning Standup](morning-standup.md) | 2 min | Start of day - pick your focus |
+| [Daily Briefing](daily-briefing.md) | 2 min | First thing - calendar + email analysis |
+| [Daily Briefing](daily-briefing.md) | 2 min | Start of day - pick your focus |
 | [Backlog Processing](backlog-processing.md) | 5-10 min | End of day or when backlog builds up |
+| [Linear Sync](linear-sync.md) | 1-2 min | Sync tasks with Linear project management |
 
 ## Weekly Workflows
 
@@ -42,3 +44,9 @@ These workflows are automatically invoked by your agent when a matching task is 
 **Reflection:**
 - "What did I accomplish this week?"
 - "How am I tracking against my goals?"
+
+**Linear Integration:**
+- "Import my Linear issues for today"
+- "Sync Linear with local tasks"
+- "Process backlog and create Linear issues"
+- "What Linear issues are blocking me?"

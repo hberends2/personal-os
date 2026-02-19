@@ -1,0 +1,85 @@
+# InnVestAI All Team Meeting (11/25)
+
+**Date:** 2025-11-28 00:00:00 UTC
+**Meeting ID:** 4760171a-2e8d-48ba-b3ad-cfbbf323c833
+**Synced:** 2026-02-19 09:31:28
+
+---
+
+# Transcript for: InnVestAI All Team Meeting (11/25)
+
+### Guest (2025-11-28T22:27:23.547Z)
+
+Hello. Hello, mark. Hello. David ode. Hi. I'm still driving to home. Almost there. Okay. All right. I believe Howard joining by car as well today. He's trying to help his daughter out with some car problems she's having. Do we want to wait for him? I'm guessing we do, right? Yes, we do. It's all wet and rainy here. In philadelphia. Yeah. Not so good. Weather. Dark. Wet, rainy, just like our company. Wedding, rainy. Yeah. Perfect. Diane Howard, miami. Budgets are behind me, which is very good. I mean, except for some minor cleanup. It was a lot of work, a lot of manual work to get through the budgets. It's interesting to see the growth. Almost every single budget sits in the back half of the year. Which will be dynamic. The capital markets need to figure out and absorb. The rationale being that I was just asking about my. Did you get a chance to go to. No.
+
+### You (2025-11-28T22:30:06.648Z)
+
+Look. S really good.
+
+### Guest (2025-11-28T22:30:16.827Z)
+
+Back sucks.
+
+### You (2025-11-28T22:30:17.768Z)
+
+What looks really good.
+
+### Guest (2025-11-28T22:30:20.107Z)
+
+One does not, sadly, get to enjoy hospitality. Very often when you are in hospitality.
+
+### You (2025-11-28T22:30:27.448Z)
+
+Hold. On.
+
+### Guest (2025-11-28T22:30:27.787Z)
+
+Yeah.
+
+### You (2025-11-28T22:30:31.448Z)
+
+Flip the. Screen around.
+
+### Guest (2025-11-28T22:30:34.827Z)
+
+Okay? Did you message Howard? Yeah, I knew he was joining by. Phone. But we really do need to wait for him. We'll just wait a little bit longer.
+
+### You (2025-11-28T22:30:53.688Z)
+
+So a couple. Of games and some.
+
+### Guest (2025-11-28T22:30:54.907Z)
+
+Okay, so in the meantime.
+
+### You (2025-11-28T22:30:55.128Z)
+
+More there.
+
+### Guest (2025-11-28T22:30:58.107Z)
+
+Drew. I don't know whether we got a chance to visit staging environment.
+
+### You (2025-11-28T22:31:02.568Z)
+
+That's not what I'm saying.
+
+### Guest (2025-11-28T22:31:05.387Z)
+
+Over last week. I was literally up till 2aM Every day. But there was lot done as well. So whatever feedback you had provided on top of that. If you see the valuation page now, it was so messy earlier, it's just reincarnated now you see completely different page.
+
+### You (2025-11-28T22:31:22.808Z)
+
+All right.
+
+### Guest (2025-11-28T22:31:28.027Z)
+
+I'm sure you like it. All right. Awesome. All the same. Feel, same calculation, everything is same. The UX wise. It looks much, much better now. Oh, yeah. Yeah, this looks great. Yeah. And whatever feed you had provided right that everything is fixed ADR Abi the calculations investment summary valuation page perform up is everything looks great now. Yeah. No, this looks great. I will go through and do some more review. Yeah. No, this is. This is very, very cool. Yep. Yep. Yeah, we use the file that you had shared. But, yeah, there's. There's a lot to. To be done. I didn't anticipate it this much. It was a lot Investment summary, particularly. That was messed up big time. Is it? Was it like a UI related challenge or was it more about the valuation one? Even the valuation apart from the ui, right, There's a lot of things that are not working properly. So that is fixed. Tabs are not saving, they're throwing errors. And when something, nothing was coming up. When it recorded the video, it was completely blank. Yeah, there was basically no data populating there. So now you'll see. I think it's populating probably close to 100% now. Yeah, it looks like. I mean, once everything is filled in, which is great. I see the. The cars are calculating.
+
+### You (2025-11-28T22:33:13.928Z)
+
+Yeah.
+
+### Guest (2025-11-28T22:33:14.427Z)
+
+Yeah, yeah. The matrices on all three pages, right? You'll see all the five matrices, provided that you are filling all the required fields. Yeah. Drew, did you share my comments as well? I did not. So I apologize. I have to go back and look at those. Know, it's sort of the generic. Perspective. I think, Mark, when you and I spoke, it was more focused on the lender specific, which is, I think, the next piece. I mean. Yeah, just like the next part that the node is going to go to work on. Yeah. This version was mostly the generic version, Mark, and then we're going to close the MVP and then move to the lender specific version. Okay? Yeah. And is is the year zero. He still. Yeah, Year zero is not done. That's still work in progress. Yeah, yeah, that's. I know that's a bit more complicated. So, yeah, that's different approach altogether, so it's taking a bit time. Got you. Vinod teams towered, but he hasn't responded and I don't know, I miss. I've sent him a text. He said he's dropping off his daughter so he's going to be late. But I asked how much longer and he did not. Respond yet if he's driving or what. Okay, if you guys want to start, this is being recorded. If. If you want to get started in the interim, it's up to you. Yeah. I mean, we. We. We can. I mean, where do you want to start? Well, you can make that call on where you want to start, or I can jump in and start. So it's up to you. Why don't you start? Okay? Then I just want to be very. Clear and respectful. I think that over the past few months, It's become increasingly clear that there's dysfunction among the three of us between Mark, Drew and myself. Right. And that dysfunction. It's been around everything. I mean, we can't defy, we can't decide on a strategy, we can't decide on fundraising. We have a hard time. We haven't really finalized the pitch deck. We struggle to get the budget done. And I just don't think this level of dysfunction is. Sustainable. So the misalignment, I feel like that's happening between the three of us is starting to impact our technology partners. It's impacting the Node and Howard and I think they're starting to question if they want to spend time investing in this, given what they're seeing between the three of us. And because of that, I've made the decision that I'm not going to sign the LLC agreement. I want to. Separate. I want the three of us to separate, and we. I just don't see a way where the three of us can find a way to work together. This is about a pattern problem that we've had over the last quarter. A great idea. We're going to fail because the three of us can't seem to work together. I know you both contributed time and money. Drew. I know you contributed. Over 7500 this point. And that is an amount that we intend to repay with interest and figure out how to work through all of that in a separation agreement. Markets less clear on your part because I don't have as much transparency into the financial contribution that you've made. But right now, today is probably not the best day to talk about that. Better to let this settle over the Thanksgiving holiday and resume. The first week in December talking about how to unwind this. Is my passion. Right. So I am going to continue to try to pursue a way to make this happen. And I really, really wish we could have figured this out, but this dysfunction just is not sustainable. So the most respectful and direct way I can come to this call and explain my position. And that again, just straightforward. I'm not going to sign the LLC agreement, and I don't see any form or reconfiguration or anything like that between the three of us. That would give me comfort in signing a partnership agreement. With. And Mark, I want to be very clear. Specifically you most directly. I think you and I are just do not work well together. And Drew. I'm sorry you're caught in the middle of this. But the function is between the three of us, and it hasn't improved. It still is very much there and hurting the overall ability of a midvest AI to move forward. So I can just say, I don't know if you were aware that you copied Mark on an email last night. I did. I'm aware. Yep. Okay? I mean, time and money aside, I mean, the work that has been done, it does not belong to you. It belongs to. I mean, it would belong to the company. I mean, it does belong to the company. We are all partners in the company. I, in particular, have imparted extensive intellectual property knowledge from my own experience that I would not part with otherwise. And I will not part with. For reimbursement with interest of the financial investment I have made in the company. So it is not for you to just say you are going to part ways and take this and keep working on it. I couldn't agree with you more, Drew. I don't know, Diane, why you think you have the ability to say what you just said. I think that a lot of the issues that we've had have been based on completely unreasonable positions that you've taken and that you've decided unilaterally. To burden the company with your own personal financial issues and then unilaterally decide to take the money. From selling the company without sign off from your partners. I'm not even sure that's legal. Let alone appropriate. So you can take this. You can take this position. But I'm not sure you have the ability to do so. Okay. Very good, then we will work through that. Not on today's call, but as we work through whatever the wind down is. The reason I believe I have this position is that technically I am the one that incorporated the company under Delaware. Right now I'm the sole member of the LLC. I am the person on the EIN. I established the GoDaddy domain, so those right now exist in my name. Under Delaware law, no verbal agreement or even work product really holds claim to an ownership stake until you have assigned LLC agreement. And so I realize we've all been playing very loose with things, but nothing has been. We've negotiated it. Right, but it's not signed. And so this will be something both of you will have to check with your attorneys about. I'll check with mine about it as well. But my understanding of the research I've done is Delaware law is very specific because it has a court of equity, and that court of equity calls for how partnerships are handled and we do not have assigned LLC agreement. And so the economic contribution is one thing. Drew, we can talk about what you feel you put forth from an IP perspective, but in my opinion, the IP was really built on Howard and Vinod's back. It is Howard Vinod in my. I don't think we even vip. I don't think we even need to talk about it any further. My attorney is already drafting a cease and desist. You will receive. And also, Drew Howard, you as well will receive this. Because it's very clear that whatever is going on is between the two of you. And. Your unilateral or bilateral. Decision to take the work that all of us have contributed without discussing with any of us. Is. I mean, just. It's illegal. Also, we need to notify Dripwood right away of your actions, Diane, because clearly, when they invested in the company, they invested in all five of us. And the fact that your unilaterally trying to make decisions on behalf of the company is something that Carlos Senior and Junior should both be notified immediately of. So I can take care of that. Make it on your list. Yes, and I will also send a notification, cease and desist to the woodworks. Yeah, we should copy Driftwood on that, Drew, because our capital partner should know about Diane's actions. And then we have months and months of emails and communications. Yeah, and paying for everything. I have been orchestrating everything. It's crazy. It's crazy behavior. Well, first of all, again, remember, legally, let's not quote the law. None of us are lawyers on the phone. But there's also something called doing the right thing. And we've all worked together, and quite frankly, we've sold an interest in the company, which you did without our authorization, and then attempted to take the money without our authorization. And Driftwood presumably invested in all five of us. So this is clearly an issue that's really beyond your unilateral control. Okay, so I think that's probably a good place to end the call. Thank you. Want to chime in here? Anything. Any parting words? I don't know what to say. Just keep me out of this, okay? Whatever you are doing. I have been just putting my days and, you know, nights to make this work. These differences are just between you guys, whatever you are doing. I had not joined you to end up at this position here. I just wanted to make a great product, great company. That's all I wanted. Really sorry. Just please keep me out of this. Just don't include my email. Yeah. That's all I would say for now. And then whatever this and we take in future that we'll see. If anything that you want to talk about is basically happy to answer. I mean, Howard. I mean Vinod. I would love to keep talking about the product with you. I will discuss with my attorney whether you need to be included on the cease. Just because there's nothing against you. I don't want the product to be further developed if it's not going to be properly. Accounted for and owned. I'm not going to allow something to be continued to be developed by anybody. As part of this company if it. Is not done. With. I mean, again, respecting the IP that I have contributed. So that's nothing personal to Node, but I can't. Again, legally speaking, I have to make sure that the IP that I've contributed is protected. Right. Howard personal to you. Truth I do use your credit card on all the payments right AWS GitHub everywhere. So let me know if you want me to. Remove that. Yeah, I think about. Let me know. I mean, I'm not sure. Being built to you right now. Yeah, no, I hear you. I will think about it, but I suspect it's probably going to be a matter of starting to cancel all those subscriptions and wind down my financial, like, all my credit cards, everything like that. This is really just fraud. Drew, at the end of the day, right, Diane didn't like our answer and didn't want to be challenged. We're taking the money. So this is her way of giving Howard 20% of the money so that he joins his her side, and then she can try to take control. Of the company. I mean, this is a classic fraud. And I'll just say from my perspective, this is a classic case of dysfunction and that what we found in negotiating the LLC and over the past quarter is that we can't effectively work together. And therefore, the years I've spent building InnVestAI, I can't risk it because of the dysfunction between the three of us. Well, everything that Drew and I recommended is called best practices. And, you know, as you know, you really knew nothing about the financial structure, and you keep talking about the four years before we joined you, but I don't think you really accomplished a lot in the first four years because things started when we all joined. So this idea in your head about five years is really. Maybe it makes you feel better for your lost time. But you know, prior to this group coming together, that there was nothing. You didn't even have a name. So you know this fallacy of five years. Is something that you truly made up. And again, everything that this company has in terms of financial structure is due directly to Drew and I. You knew nothing about it, and quite frankly, The first conversation about driftwood, you were so desperate to take the money that you wanted to do so at a value of 500,000. So that is untrue. No, I do feel this is called a wrong and you're making up facts as you go along to try to support your thesis of taking the money. We've asked you multiple times where the money went, and you refused to respond. You sold an interest in the company and had the buyer wire money directly to your personal account. That's called fraud. F R A U D. You want to talk about the law, let's start there. You sold an interest in the company and took the money. You're not the company. We're the company. That was inappropriate. And we called you on that. And you took offense to that. That's why you haven't joined a Call in a month. All right. This is ridiculous. I don't know is any more to talk about. But again. Okay, so cease and desist. You're going to contact Mark Woodworth. You're going to contact. Driftwood. You're going to have your attorney send us notices, and I think we'll probably just go quiet on things until we can have clearer heads and try to figure out how to unwind this. And the node to be clear. Unfortunately, that means no work on the product. I don't know what you want to tell the team in India. I'm sorry that they are stuck in the middle of this and you are stuck in the middle of this. But yeah, we do need to pay them for this month at least, because they've been working. I can handle. Okay? All right, everyone, have a good night. All right. Bye.

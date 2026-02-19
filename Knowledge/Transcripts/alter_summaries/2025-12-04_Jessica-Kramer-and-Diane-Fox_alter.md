@@ -1,0 +1,17 @@
+# Alter Summary
+
+**Source:** /Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-12-04_Jessica-Kramer-and-Diane-Fox_summary.md
+**Project:** needs_triage
+
+## Summary
+
+Jessica Kramer and Diane Fox discussed the terms of engagement for their collaboration, including a monthly fee of $1500 and equity percentage. They emphasized the importance of communication, suggesting two calls per month to ensure alignment. Jessica expressed her willingness to provide assistance and guidance throughout the process.
+
+## Decisions
+
+- $1500 monthly fee agreed upon
+- Equity percentage to be determined
+
+## Action Items
+
+_None captured._

@@ -1,12 +1,12 @@
 #!/bin/bash
 # HowardOS Local Sync Script
 # - Syncs Granola transcripts to Knowledge/Transcripts (new/modified files only)
-# - Syncs Apple Notes "Brain Dump" to BACKLOG.md
+# - Syncs Apple Notes "Brain Dump" to Knowledge/BACKLOG.md
 # - Syncs today's Apple Calendar events to Tasks/TODAY_CALENDAR.md
 # - Syncs recent unread email to Tasks/TODAY_EMAIL.md
 
 LOG_FILE="$HOME/Library/Logs/howard-os-sync.log"
-BACKLOG_FILE="/Users/howardberends/Claude Code/howard-os/BACKLOG.md"
+BACKLOG_FILE="/Users/howardberends/Claude Code/howard-os/Knowledge/BACKLOG.md"
 CALENDAR_FILE="/Users/howardberends/Claude Code/howard-os/Tasks/TODAY_CALENDAR.md"
 EMAIL_FILE="/Users/howardberends/Claude Code/howard-os/Tasks/TODAY_EMAIL.md"
 
@@ -21,7 +21,7 @@ log() {
 
 log "Granola transcripts are synced directly by obsidian_sync.py (no rsync needed)"
 
-# ── 2. Sync Apple Notes "Brain Dump" → BACKLOG.md ───────────────────────────
+# ── 2. Sync Apple Notes "Brain Dump" → Knowledge/BACKLOG.md ──────────────────
 
 log "Reading Brain Dump from Apple Notes..."
 
@@ -47,7 +47,7 @@ if [[ "$BRAIN_DUMP_HTML" == APPLESCRIPT_ERROR:* ]]; then
 fi
 
 if [[ -z "$BRAIN_DUMP_HTML" ]]; then
-    log "Brain Dump note not found or is empty — skipping BACKLOG.md update."
+    log "Brain Dump note not found or is empty — skipping Knowledge/BACKLOG.md update."
 else
     # Write HTML to a temp file so Python can read it reliably
     TMPFILE=$(mktemp /tmp/brain_dump_XXXXXX.html)
@@ -117,7 +117,7 @@ PYEOF
         echo "$PLAIN_TEXT"
     } > "$BACKLOG_FILE"
 
-    log "Brain Dump synced to BACKLOG.md."
+    log "Brain Dump synced to Knowledge/BACKLOG.md."
 fi
 
 # ── 3. Sync Apple Calendar → Tasks/TODAY_CALENDAR.md ────────────────────────

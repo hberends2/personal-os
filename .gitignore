@@ -16,6 +16,14 @@ Knowledge/*.md
 CLAUDE.md       # If customized from template
 GOALS.md        # Personal goals
 
+# Integration auth & state
+.env
+.env.local
+*.env
+.mcp-auth.json
+.linear-sync-state.json
+.granola-sync.json
+
 # Keep templates and examples
 !CLAUDE_TEMPLATE.md
 !config.example.yaml

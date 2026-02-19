@@ -7,11 +7,12 @@ project/
 ├── Tasks/                    # Task files in markdown with YAML frontmatter
 │   ├── TODAY_CALENDAR.md     # Auto-synced: today's + next business day's events
 │   └── TODAY_EMAIL.md        # Auto-synced: unread email from last 48hrs
-├── Knowledge/
-│   └── Transcripts/          # Auto-synced: Granola meeting transcripts
+├── Knowledge/                # Central hub for all reference docs (auto-synced)
+│   ├── BACKLOG.md            # Brain dump from Apple Notes (unprocessed ideas)
+│   ├── Transcripts/          # Granola transcripts, summaries, action items
+│   └── Briefings/            # Daily briefing summaries (YYYY-MM-DD briefing.md)
 ├── Writing/                  # Writing style, document formatting
-├── Research/                 # Research style, Strategic Insights format 
-├── BACKLOG.md                # Auto-synced from Apple Notes "Brain Dump"
+├── Research/                 # Research style, Strategic Insights format
 ├── GOALS.md                  # Goals, themes, priorities
 ├── sync_local.sh             # Runs every 30 min via launchd
 └── AGENTS.md                 # Your instructions
@@ -19,12 +20,12 @@ project/
 
 ## Backlog Flow
 When the user says "clear my backlog", "process backlog", or similar:
-1. Read `BACKLOG.md` and extract every actionable item.
-2. Look through `Knowledge/` for context (matching keywords, project names, or dates).
+1. Read `Knowledge/BACKLOG.md` and extract every actionable item.
+2. Look through `Knowledge/` for context (matching keywords in Transcripts/, Briefings/, related action items).
 3. Use `process_backlog_with_dedup` to avoid creating duplicates.
 4. If an item lacks context, priority, or a clear next step, STOP and ask the user for clarification before creating the task.
 5. Create or update task files under `Tasks/` with complete metadata.
-6. Present a concise summary of new tasks, then clear `BACKLOG.md`.
+6. Present a concise summary of new tasks, then clear `Knowledge/BACKLOG.md`.
 
 ## Task Template
 
@@ -65,12 +66,13 @@ The following files are kept current automatically — read them without fetchin
 
 | File | Source | Contents |
 |------|--------|----------|
-| `BACKLOG.md` | Apple Notes "Brain Dump" | Raw captures, unprocessed todos. HTML stripped, plain text only. |
+| `Knowledge/BACKLOG.md` | Apple Notes "Brain Dump" | **Raw captures, unprocessed todos.** HTML stripped, plain text only. Central hub for incomplete work and ideas. Review alongside Transcripts and Briefings to identify patterns and recurring issues. |
 | `Tasks/TODAY_CALENDAR.md` | Apple Calendar | **Today** (full table with times) + **next business day** (bullet summary). Excludes Calvin Calendar and system/holiday calendars. All day events included. |
 | `Tasks/TODAY_EMAIL.md` | Apple Mail | **All unread messages from last 48hrs** (newest first). Accounts: iCloud, Gmail, Berends Consulting. Excludes: InnVestAI, live.com. Includes: Date, account, sender, subject. |
 | `Knowledge/Transcripts/alter_summaries/` | Granola (via Obsidian) | **269+ files** - AI-structured meeting summaries, organized by topic sections (Product Development, Technical Plans, Next Steps, etc.) |
-| `Knowledge/Transcripts/alter_action_items/` | Granola (via Obsidian) | **186+ files** - Extracted action items per meeting, owner-prefixed bullets for easy assignment |
+| `Knowledge/Transcripts/alter_action_items/` | Granola (via Obsidian) | **186+ files** - Extracted action items per meeting, owner-prefixed bullets for easy assignment. Cross-reference with BACKLOG.md to catch duplicates. |
 | `Knowledge/Transcripts/transcripts/` | Granola (via Obsidian) | **239+ files** - Full raw transcripts with speaker-by-speaker dialogue (reference only) |
+| `Knowledge/Briefings/` | Daily briefing | **YYYY-MM-DD briefing.md** - Daily briefing summaries (auto-saved). Review weekly to track: priorities vs. actuals, emerging patterns, productivity trends. |
 
 **Granola Sync Pipeline:**
 - Obsidian Granola plugin exports meeting files from Granola
@@ -123,8 +125,8 @@ For complex tasks, delegate to workflow files in `examples/workflows/`. Read the
 6. The workflow may reference files in `Writing/` for context
 
 ## Helpful Prompts to Encourage
-- "What should I work on today?" — morning briefing with calendar, email, and tasks
-- "Clear my backlog" — process BACKLOG.md into prioritized tasks
+- "What should I work on today?" — morning briefing with calendar, email, and tasks (saves to Knowledge/Briefings/)
+- "Clear my backlog" — process Knowledge/BACKLOG.md into prioritized tasks
 - "Any emails I should respond to first?" — surface action-required emails
 - "What's on my calendar tomorrow?" — preview next business day
 - "Show tasks supporting goal [goal name]"

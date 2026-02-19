@@ -1,0 +1,16 @@
+# Alter Summary
+
+**Source:** /Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-05-14_InnVest-AI-model-review-lets-use-my-zoom-so-i-can-navigate-the-model-thanks_summary.md
+**Project:** innXchange
+
+## Summary
+
+The meeting focused on reviewing Mark's AI model, specifically the 'STR Output' tab which calculates occupancy penetration. The model includes promotional and waterfall calculations, and it was noted that STR reports are consistently provided by the broker. The team discussed the importance of these metrics in evaluating performance.
+
+## Decisions
+
+_None captured._
+
+## Action Items
+
+_None captured._

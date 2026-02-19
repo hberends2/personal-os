@@ -123,9 +123,10 @@ All data is auto-synced every 30 min by `sync_local.sh` (macOS launchd). No manu
 |------|-----------------|
 | `Tasks/TODAY_CALENDAR.md` | Today's events + next business day summary |
 | `Tasks/TODAY_EMAIL.md` | Unread email last 48hrs (iCloud, Gmail, Berends Consulting) |
-| `BACKLOG.md` | Apple Notes "Brain Dump" |
-| `Knowledge/Transcripts/alter_summaries/` | Granola meeting summaries (last 7 days) |
-| `Knowledge/Transcripts/alter_action_items/` | Open action items from recent meetings |
+| `Knowledge/BACKLOG.md` | Apple Notes "Brain Dump" (unprocessed ideas & todos) |
+| `Knowledge/Transcripts/alter_summaries/` | Granola meeting summaries (269+ files) |
+| `Knowledge/Transcripts/alter_action_items/` | Open action items from recent meetings (186+ files) |
+| `Knowledge/Briefings/` | Previous daily briefing summaries (for pattern tracking) |
 
 ## Saving Briefings
 

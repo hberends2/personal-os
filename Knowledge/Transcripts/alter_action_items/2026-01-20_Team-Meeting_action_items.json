@@ -1,0 +1,22 @@
+{
+  "source_summary_path": "/Users/howardberends/Documents/Alter/granola_sync/input/summaries/2026-01-20_Team-Meeting_summary.md",
+  "project": "needs_triage",
+  "summary": "During the team meeting, Vinod expressed the need for Git and logo files. It was agreed to set up a call for the following Monday at 11:00 AM to discuss further details. The team is focused on ensuring all necessary resources are available for upcoming projects.",
+  "decisions": [
+    "Set up a call for next Monday at 11:00 AM."
+  ],
+  "items": [
+    {
+      "title": "Provide Git and logo files",
+      "details": "Vinod needs access to the Git repository and logo files for the project. Ensure that the files are shared before the next meeting.",
+      "owner": "msherban23@gmail.com",
+      "due": "2026-01-23"
+    },
+    {
+      "title": "Schedule a call",
+      "details": "Set up a call for next Monday at 11:00 AM to discuss project details.",
+      "owner": null,
+      "due": "2026-01-23"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source_summary_path": "/Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-09-02_InnVestAI-Admin-Session_summary.md",
+  "project": "innXchange",
+  "summary": "The InnVestAI Admin Session focused on breaking down the roadmap by persona. Diane Fox and Howard Berends discussed the importance of tailoring the roadmap to meet the specific needs of different user personas. This approach aims to enhance user experience and ensure that the development aligns with user expectations.",
+  "decisions": [
+    "Break down the roadmap by user persona."
+  ],
+  "items": [
+    {
+      "title": "Break down roadmap by persona",
+      "details": "Analyze the current roadmap and categorize features and tasks according to different user personas to improve alignment with user needs.",
+      "owner": "Diane Fox",
+      "due": "2025-09-15"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "source_summary_path": "/Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-09-17_Proforma-valuation-model-walkthrough_summary.md",
+  "project": "needs_triage",
+  "summary": "The meeting focused on the proforma and valuation model, highlighting several issues that need to be addressed. Key changes include renaming 'Units' to 'Rooms/Keys' for clarity. Additionally, there are concerns regarding the status bar during data extraction and the possibility of extracting data in the background to improve user experience.",
+  "decisions": [
+    "Rename 'Units' to 'Rooms/Keys'.",
+    "Implement a status bar for data extraction.",
+    "Explore background data extraction options."
+  ],
+  "items": [
+    {
+      "title": "Rename Units to Rooms/Keys",
+      "details": "Update all relevant documentation and interfaces to reflect the change from 'Units' to 'Rooms/Keys'. Acceptance criteria include verification that all instances are updated and consistent across the platform.",
+      "owner": "Development Team",
+      "due": "2025-09-30"
+    },
+    {
+      "title": "Implement status bar for data extraction",
+      "details": "Develop and integrate a status bar that displays progress during data extraction. Acceptance criteria include functionality testing and user feedback.",
+      "owner": "UI/UX Team",
+      "due": "2025-10-15"
+    },
+    {
+      "title": "Explore background data extraction options",
+      "details": "Research and propose solutions for implementing background data extraction to enhance user experience. Acceptance criteria include a report with recommendations and potential implementation timelines.",
+      "owner": "Technical Team",
+      "due": "2025-10-20"
+    }
+  ]
+}

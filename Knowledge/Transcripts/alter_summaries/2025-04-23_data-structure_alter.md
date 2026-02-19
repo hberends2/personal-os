@@ -1,0 +1,17 @@
+# Alter Summary
+
+**Source:** /Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-04-23_data-structure_summary.md
+**Project:** innXchange
+
+## Summary
+
+The meeting focused on the data structure for InnVestAI, which involves three key personas: Investor, Broker, and Asset Manager. It was discussed that the Asset Manager will provide quarterly updates, and the platform will allow Investors to adjust Broker assumptions to fit their needs. Additionally, Drew's historical data will be utilized for revenue and expense reporting, with monthly reports including year-to-date figures and forecasts for the remaining months.
+
+## Decisions
+
+- Incorporate Broker assumptions into the InnVestAI platform for Investor adjustments.
+- Utilize Drew's historical data for revenue and expense reporting.
+
+## Action Items
+
+_None captured._

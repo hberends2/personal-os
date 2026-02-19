@@ -1,6 +1,6 @@
 # Examples
 
-Templates, workflows, and tutorials for PersonalOS.
+Templates, workflows, and tutorials for HowardOS.
 
 ## Workflows
 
@@ -8,17 +8,17 @@ Real-world usage patterns for day-to-day productivity.
 
 | Workflow | Time | Description |
 |----------|------|-------------|
-| [Morning Standup](workflows/morning-standup.md) | 2 min | Start your day with focus |
+| [Daily Briefing](workflows/daily-briefing.md) | 2 min | Start your day with focus |
 | [Backlog Processing](workflows/backlog-processing.md) | 5-10 min | Turn messy notes into tasks |
 | [Weekly Review](workflows/weekly-review.md) | 15-30 min | Reflect and plan ahead |
 
 ## Tutorials
 
-Deep dives into how PersonalOS and AI agents work together.
+Deep dives into how HowardOS and AI agents work together.
 
 | Tutorial | Description |
 |----------|-------------|
-| [Build Your Personal OS](tutorials/build-your-personal-os.md) | **Start here** - Complete guide to building your system |
+| [Build Your Personal OS](tutorials/build-your-howard-os.md) | **Start here** - Complete guide to building your system |
 | [Memory & Context](tutorials/memory.md) | How your agent remembers across sessions |
 | [Subagents](tutorials/subagents.md) | Parallel execution with multiple agents |
 | [Tool Calling & MCP](tutorials/tool-calling.md) | How agents take actions |

@@ -1,12 +1,12 @@
 # Tutorials
 
-Deep dives into AI agent concepts and how they power PersonalOS.
+Deep dives into AI agent concepts and how they power HowardOS.
 
 ## Start Here
 
 | Tutorial | What You'll Learn |
 |----------|-------------------|
-| [Build Your Personal OS](build-your-personal-os.md) | Complete guide to building your AI-powered productivity system |
+| [Build Your Personal OS](build-your-howard-os.md) | Complete guide to building your AI-powered productivity system |
 | [Markdown & Structure](markdown-and-structure.md) | Why text and folders are the best database for AI |
 
 ## Core Concepts
@@ -24,7 +24,7 @@ Deep dives into AI agent concepts and how they power PersonalOS.
 
 These tutorials assume you have:
 - An AI coding agent (Cursor, Claude Code, Factory, etc.)
-- PersonalOS set up and working
+- HowardOS set up and working
 - Completed at least one backlog processing session
 
 ## Suggested Reading Order

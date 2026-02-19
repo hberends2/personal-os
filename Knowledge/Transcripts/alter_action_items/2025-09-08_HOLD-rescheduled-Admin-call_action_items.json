@@ -1,0 +1,14 @@
+{
+  "source_summary_path": "/Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-09-08_HOLD-rescheduled-Admin-call_summary.md",
+  "project": "needs_triage",
+  "summary": "The Admin call scheduled for September 8, 2025, was rescheduled. During the meeting, it was noted that HB will be reaching out to Delve for further discussions. No other topics were covered in detail.",
+  "decisions": [],
+  "items": [
+    {
+      "title": "Reach out to Delve",
+      "details": "HB is tasked with contacting Delve to discuss relevant matters. The acceptance criteria include receiving a response from Delve and scheduling a follow-up meeting if necessary.",
+      "owner": "HB",
+      "due": null
+    }
+  ]
+}

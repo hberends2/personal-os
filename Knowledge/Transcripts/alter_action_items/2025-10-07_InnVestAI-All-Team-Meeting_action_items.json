@@ -1,0 +1,14 @@
+{
+  "source_summary_path": "/Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-10-07_InnVestAI-All-Team-Meeting_summary.md",
+  "project": "innXchange",
+  "summary": "During the InnVestAI All Team Meeting, the team discussed the current accuracy rate of 95% and the need to address processing failures. There was a focus on understanding the existing processes that are in place to rectify these issues. The team emphasized the importance of improving accuracy and reducing failures in the system.",
+  "decisions": [],
+  "items": [
+    {
+      "title": "Review processing failure protocols",
+      "details": "Investigate the current processes in place to address processing failures and identify areas for improvement. Acceptance criteria include a report outlining existing protocols and recommendations for enhancements.",
+      "owner": "Team Lead",
+      "due": "2025-10-14"
+    }
+  ]
+}

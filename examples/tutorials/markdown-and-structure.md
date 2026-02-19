@@ -41,7 +41,7 @@ This allows your AI agent to:
 
 If Markdown is the **content**, the directory structure is the **context**.
 
-In PersonalOS, we don't use a database to store relationships. We use the filesystem.
+In HowardOS, we don't use a database to store relationships. We use the filesystem.
 
 ### 1. Semantics by Location
 Where a file lives tells the AI what it *is*.

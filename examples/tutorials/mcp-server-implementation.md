@@ -2,7 +2,7 @@
 
 ## What is MCP?
 
-The Model Context Protocol (MCP) is an open standard that enables AI agents to interact with external systems securely. In PersonalOS, the MCP server acts as the "Product Logic Layer" between the AI and your file system.
+The Model Context Protocol (MCP) is an open standard that enables AI agents to interact with external systems securely. In HowardOS, the MCP server acts as the "Product Logic Layer" between the AI and your file system.
 
 Think of it like an API for your AI. Instead of giving the agent raw, unstructured access to read and write files, you give it a set of defined tools with strict rules.
 
@@ -44,9 +44,9 @@ MCP introduces a middleware layer that encapsulates your business logic.
 > **AI:** *Calls `create_task` tool.*
 > **Server:** *Checks for duplicates.* "Rejected: 90% similar to existing task T-123."
 
-## Core Features in PersonalOS
+## Core Features in HowardOS
 
-Here is how PersonalOS uses MCP to turn a simple markdown system into a smart application.
+Here is how HowardOS uses MCP to turn a simple markdown system into a smart application.
 
 ### 1. Business Logic Injection
 We force the agent to use `create_task` instead of writing files directly.

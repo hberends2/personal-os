@@ -1,0 +1,29 @@
+{
+  "source_summary_path": "/Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-04-24_InnVestAI-workflow-and-data-integration-strategy-for-hotel-underwriting_summary.md",
+  "project": "innXchange",
+  "summary": "The meeting focused on the workflow and data integration strategy for hotel underwriting at InnVestAI. It was emphasized that InnVestAI can compete with STR by allowing owners and brands to submit data for reporting. A key priority identified is the prepopulation of comparative data, with a future goal of including a map view in the platform.",
+  "decisions": [
+    "InnVestAI will allow owners and brands to submit data for reporting.",
+    "Prepopulating comparative data is a priority."
+  ],
+  "items": [
+    {
+      "title": "Develop data submission feature",
+      "details": "Create a feature that allows hotel owners and brands to submit their data directly into the InnVestAI platform for reporting purposes. Acceptance criteria include user-friendly interface and data validation processes.",
+      "owner": "Development Team",
+      "due": "2025-06-01"
+    },
+    {
+      "title": "Implement prepopulation of comparative data",
+      "details": "Work on the backend to ensure that comparative data is prepopulated for users. This should include defining the data sources and ensuring accuracy.",
+      "owner": "Data Team",
+      "due": "2025-05-15"
+    },
+    {
+      "title": "Plan map view integration",
+      "details": "Outline the requirements and design for integrating a map view into the platform for future use. This should include user experience considerations and technical feasibility.",
+      "owner": "Product Team",
+      "due": "2025-07-01"
+    }
+  ]
+}

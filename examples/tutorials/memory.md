@@ -4,7 +4,7 @@ How your AI agent remembers your preferences, goals, and working style.
 
 ## Overview
 
-AI coding agents (Claude Code, Codex, Factory, etc.) don't have persistent memory between sessions by default. PersonalOS solves this with structured files that your agent reads at the start of each conversation.
+AI coding agents (Claude Code, Codex, Factory, etc.) don't have persistent memory between sessions by default. HowardOS solves this with structured files that your agent reads at the start of each conversation.
 
 ## The Memory Stack
 

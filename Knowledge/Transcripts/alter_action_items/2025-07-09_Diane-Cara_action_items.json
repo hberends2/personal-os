@@ -1,0 +1,29 @@
+{
+  "source_summary_path": "/Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-07-09_Diane-Cara_summary.md",
+  "project": "needs_triage",
+  "summary": "During the meeting, Diane and Cara discussed various aspects of the granola project, focusing on lender perspectives and the importance of a risk matrix. They emphasized the need to flag variances that deviate from market standards and the necessity of incorporating specific inputs for forecasting. Additionally, they talked about creating worksheets for outlier items and enhancing the overall asset management process.",
+  "decisions": [
+    "Implement a risk matrix to assess project risks.",
+    "Flag variances that are out of line with market standards."
+  ],
+  "items": [
+    {
+      "title": "Create a risk matrix",
+      "details": "Develop a comprehensive risk matrix to evaluate potential risks associated with the project. Acceptance criteria include identifying key risk factors and their impact on the project timeline and budget.",
+      "owner": "Cara Munn",
+      "due": "2025-07-16"
+    },
+    {
+      "title": "Develop a worksheet for outlier items",
+      "details": "Create a worksheet that identifies and analyzes outlier items in the project. This should include criteria for what constitutes an outlier and how to address them.",
+      "owner": "Diane",
+      "due": "2025-07-23"
+    },
+    {
+      "title": "Incorporate Rooms/Keys inputs for Forecast years",
+      "details": "Ensure that Rooms/Keys data is included as an input for the forecasting process. This will help in generating accurate forecasts for the upcoming years.",
+      "owner": null,
+      "due": "2025-07-30"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_summary_path": "/Users/howardberends/Documents/Alter/granola_sync/input/summaries/2025-04-22_Coordination-Call_summary.md",
+  "project": "needs_triage",
+  "summary": "During the coordination call, it was discussed that Howard will collaborate with Vinod to create a workflow diagram. Additionally, Howard will also work with Diane to set up an email account. These tasks are essential for improving communication and project management.",
+  "decisions": [],
+  "items": [
+    {
+      "title": "Collaborate on workflow diagram",
+      "details": "Howard needs to work with Vinod to create a comprehensive workflow diagram that outlines the project processes.",
+      "owner": "Howard",
+      "due": null
+    },
+    {
+      "title": "Set up email account",
+      "details": "Howard will coordinate with Diane to establish a new email account for project communications.",
+      "owner": "Howard",
+      "due": null
+    }
+  ]
+}
