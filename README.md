@@ -165,10 +165,15 @@ HowardOS syncs automatically with your Apple apps every 30 minutes via `sync_loc
 | Source | Destination | Notes |
 |--------|-------------|-------|
 | Apple Notes "Brain Dump" | `BACKLOG.md` | Full note content, HTML stripped |
-| Apple Calendar | `Tasks/TODAY_CALENDAR.md` | Today (full table) + next business day (summary). Excludes Calvin Calendar and system calendars. |
-| Apple Mail | `Tasks/TODAY_EMAIL.md` | Unread from last 48hrs — iCloud, Gmail, Berends Consulting only. |
+| Apple Calendar | `Tasks/TODAY_CALENDAR.md` | **Today** (full table) + **next business day** (summary). Excludes Calvin Calendar and system calendars. All events now synced correctly. |
+| Apple Mail | `Tasks/TODAY_EMAIL.md` | Unread from **last 48hrs** (all messages captured, newest first). Includes iCloud, Gmail, Berends Consulting. Excludes InnVestAI and live.com. |
 
 All three files are auto-loaded into every Claude Code session via `CLAUDE.md` `@` imports.
+
+**Sync Details:**
+- **Calendar**: Captures today's events (full details) and next business day preview
+- **Email**: Returns all unread messages from the past 48 hours, properly sorted by recency
+- **Notes**: Extracts plain text from "Brain Dump" note (HTML tags stripped)
 
 **Manual run:**
 ```bash
@@ -176,6 +181,8 @@ All three files are auto-loaded into every Claude Code session via `CLAUDE.md` `
 ```
 
 **Logs:** `~/Library/Logs/howard-os-sync.log`
+- Main sync log: `howard-os-sync.log`
+- Detailed errors: `howard-os-sync-error.log`
 
 ---
 
@@ -183,18 +190,24 @@ All three files are auto-loaded into every Claude Code session via `CLAUDE.md` `
 
 Meeting data syncs automatically — no manual steps needed:
 
-1. **Obsidian Granola plugin** checks Granola every 30 min and exports structured files
-2. **`sync_local.sh`** rsyncs those files to `Knowledge/Transcripts/` every 30 min
+1. **Obsidian Granola plugin** exports structured meeting files from Granola
+2. **`obsidian_sync.py`** processes those files and writes directly to `Knowledge/Transcripts/`
 
 Meeting content is organized into three subfolders:
 
 | Folder | Contents |
 |--------|----------|
-| `Knowledge/Transcripts/alter_summaries/` | AI-structured summaries by topic section |
-| `Knowledge/Transcripts/alter_action_items/` | Extracted action items, owner-prefixed |
-| `Knowledge/Transcripts/transcripts/` | Full raw transcripts (reference) |
+| `Knowledge/Transcripts/alter_summaries/` | AI-structured summaries by topic section (269+ files) |
+| `Knowledge/Transcripts/alter_action_items/` | Extracted action items, owner-prefixed (186+ files) |
+| `Knowledge/Transcripts/transcripts/` | Full raw transcripts (reference only, 239+ files) |
 
-See **[GRANOLA_SYNC.md](GRANOLA_SYNC.md)** for troubleshooting and pipeline details.
+**Manual sync trigger:**
+```bash
+cd ~/Documents/Alter/granola_sync
+python3 scripts/obsidian_sync.py
+```
+
+See **[README_OBSIDIAN_SYNC.md](../../Documents/Alter/granola_sync/README_OBSIDIAN_SYNC.md)** for detailed configuration and troubleshooting.
 
 ## For Contributors
 

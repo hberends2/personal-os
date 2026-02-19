@@ -65,14 +65,26 @@ The following files are kept current automatically — read them without fetchin
 
 | File | Source | Contents |
 |------|--------|----------|
-| `BACKLOG.md` | Apple Notes "Brain Dump" | Raw captures, unprocessed todos |
-| `Tasks/TODAY_CALENDAR.md` | Apple Calendar | Today's events (full table) + next business day (summary). Excludes Calvin Calendar and system/holiday calendars. |
-| `Tasks/TODAY_EMAIL.md` | Apple Mail | Unread messages from last 48hrs across iCloud, Gmail, and Berends Consulting. Excludes InnVestAI and live.com. Sorted newest-first. |
-| `Knowledge/Transcripts/alter_summaries/` | Granola (via Obsidian) | AI-structured meeting summaries, organized by topic sections |
-| `Knowledge/Transcripts/alter_action_items/` | Granola (via Obsidian) | Extracted action items per meeting, owner-prefixed bullets |
-| `Knowledge/Transcripts/transcripts/` | Granola (via Obsidian) | Full raw transcripts (reference only) |
+| `BACKLOG.md` | Apple Notes "Brain Dump" | Raw captures, unprocessed todos. HTML stripped, plain text only. |
+| `Tasks/TODAY_CALENDAR.md` | Apple Calendar | **Today** (full table with times) + **next business day** (bullet summary). Excludes Calvin Calendar and system/holiday calendars. All day events included. |
+| `Tasks/TODAY_EMAIL.md` | Apple Mail | **All unread messages from last 48hrs** (newest first). Accounts: iCloud, Gmail, Berends Consulting. Excludes: InnVestAI, live.com. Includes: Date, account, sender, subject. |
+| `Knowledge/Transcripts/alter_summaries/` | Granola (via Obsidian) | **269+ files** - AI-structured meeting summaries, organized by topic sections (Product Development, Technical Plans, Next Steps, etc.) |
+| `Knowledge/Transcripts/alter_action_items/` | Granola (via Obsidian) | **186+ files** - Extracted action items per meeting, owner-prefixed bullets for easy assignment |
+| `Knowledge/Transcripts/transcripts/` | Granola (via Obsidian) | **239+ files** - Full raw transcripts with speaker-by-speaker dialogue (reference only) |
 
-Granola meetings auto-sync every 30 min via the Obsidian Granola plugin → `sync_local.sh` rsync. No manual steps needed. For meeting context, read from `alter_summaries/` (summaries) and `alter_action_items/` (action items).
+**Granola Sync Pipeline:**
+- Obsidian Granola plugin exports meeting files from Granola
+- `obsidian_sync.py` processes files and writes **directly** to `Knowledge/Transcripts/` (no rsync, no permission issues)
+- Supports incremental sync (only new/modified files) and full force sync
+- Date filtering: syncs meetings up to 2027-01-01 (currently all 179 meetings)
+
+**Manual Granola Sync:**
+```bash
+cd ~/Documents/Alter/granola_sync
+source .venv/bin/activate
+python3 scripts/obsidian_sync.py          # Normal incremental sync
+python3 scripts/obsidian_sync.py --force  # Force full resync
+```
 
 ## Daily Guidance
 - Answer prompts like "What should I work on today?" by reading `Tasks/TODAY_CALENDAR.md`, `Tasks/TODAY_EMAIL.md`, and active task files, then cross-referencing `GOALS.md`.
@@ -146,5 +158,31 @@ The system integrates with Linear project management via MCP server. You can:
 - See `examples/workflows/linear-sync.md` for detailed workflows
 
 When syncing with Linear, preserve the `linear_id` metadata field to enable two-way sync.
+
+## Sync Troubleshooting
+
+**Calendar not updating?**
+- Verify launchd is running: `launchctl list | grep howard-os`
+- Check logs: `tail -50 ~/Library/Logs/howard-os-sync.log`
+- Manual run: `/Users/howardberends/Claude\ Code/howard-os/sync_local.sh`
+- Ensure Calendar.app has proper permissions in System Settings
+
+**Email missing or incomplete?**
+- All unread from last 48hrs should appear in `Tasks/TODAY_EMAIL.md`
+- Check if older emails (>48hrs) are being excluded (expected behavior)
+- Verify Mail.app accounts: must be iCloud, Gmail, or Berends Consulting
+- Excluded: InnVestAI, live.com (by design)
+- Manual sync: `/Users/howardberends/Claude\ Code/howard-os/sync_local.sh`
+
+**Granola meetings not syncing?**
+- Direct sync to `Knowledge/Transcripts/` via `obsidian_sync.py` (no rsync permission issues)
+- Verify state: `cat ~/Documents/Alter/granola_sync/state/obsidian_sync_status.json`
+- Check logs: `tail -50 ~/Documents/Alter/granola_sync/logs/obsidian_sync.log`
+- Force full resync: `cd ~/Documents/Alter/granola_sync && python3 scripts/obsidian_sync.py --force`
+
+**Sync logs:**
+- Main log: `~/Library/Logs/howard-os-sync.log`
+- Error log: `~/Library/Logs/howard-os-sync-error.log`
+- Granola log: `~/Documents/Alter/granola_sync/logs/obsidian_sync.log`
 
 Keep the user focused on meaningful progress, guided by their goals and the context stored in Knowledge/.
