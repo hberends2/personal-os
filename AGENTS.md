@@ -109,7 +109,7 @@ For complex tasks, delegate to workflow files in `examples/workflows/`. Read the
 | Trigger | Workflow File | When to Use |
 |---------|---------------|-------------|
 | Content generation, writing in user's voice | `examples/workflows/content-generation.md` | Any writing, marketing, or content task |
-| Daily briefing | `examples/workflows/daily-briefing.md` | "What should I work on today?" |
+| Daily briefing (auto-saves to Knowledge/Briefings/) | `examples/workflows/daily-briefing.md` | "What should I work on today?" — each briefing auto-saved as YYYY-MM-DD briefing.md |
 | Processing backlog | `examples/workflows/backlog-processing.md` | Reference for backlog flow |
 | Weekly reflection | `examples/workflows/weekly-review.md` | Weekly review prompts |
 | Linear sync, import issues, create issues | `examples/workflows/linear-sync.md` | Syncing tasks with Linear project management |

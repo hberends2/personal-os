@@ -2,6 +2,8 @@
 
 A quick routine to review your calendar, email, and tasks and set today's focus.
 
+**Note:** Each briefing is automatically saved to `Knowledge/Briefings/YYYY-MM-DD briefing.md` (or numbered `... briefing 2.md`, `... briefing 3.md` if multiple briefings created in a day).
+
 ## Quick Start
 
 ```
@@ -125,8 +127,30 @@ All data is auto-synced every 30 min by `sync_local.sh` (macOS launchd). No manu
 | `Knowledge/Transcripts/alter_summaries/` | Granola meeting summaries (last 7 days) |
 | `Knowledge/Transcripts/alter_action_items/` | Open action items from recent meetings |
 
+## Saving Briefings
+
+Each briefing is **automatically saved** to `Knowledge/Briefings/` with the date as the filename.
+
+**Filename Format:**
+- First briefing of the day: `YYYY-MM-DD briefing.md`
+- Second briefing: `YYYY-MM-DD briefing 2.md`
+- Third briefing: `YYYY-MM-DD briefing 3.md`
+- (and so on...)
+
+**To manually save a briefing:**
+```bash
+cd ~/Claude\ Code/howard-os/examples/workflows/scripts
+python3 save-briefing.py "Your briefing content here"
+```
+
+**View saved briefings:**
+```bash
+ls -la ~/Claude\ Code/howard-os/Knowledge/Briefings/
+```
+
 ## Tips
 
 - Data is never more than 30 minutes stale — no need to manually sync before briefing
 - Email list is unread only — once you read a message in Mail it drops off next sync
 - If you need to force a refresh: run `"/Users/howardberends/Claude Code/howard-os/sync_local.sh"`
+- Briefings are saved for future reference and pattern tracking — review them weekly to see what's working

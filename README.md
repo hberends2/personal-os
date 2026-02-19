@@ -98,7 +98,8 @@ howard-os/
 │   ├── TODAY_CALENDAR.md   # Auto-synced every 30 min from Apple Calendar
 │   └── TODAY_EMAIL.md      # Auto-synced every 30 min from Apple Mail
 ├── Knowledge/              # Reference docs & notes (gitignored)
-│   └── Transcripts/        # Auto-synced from Granola output
+│   ├── Transcripts/        # Auto-synced from Granola output
+│   └── Briefings/          # Auto-saved daily briefing summaries (YYYY-MM-DD briefing.md)
 ├── Research/               # Research docs & notes (gitignored)
 ├── Writing/                # Writing styles & notes (gitignored)
 ├── BACKLOG.md              # Auto-synced from Apple Notes "Brain Dump" (gitignored)
